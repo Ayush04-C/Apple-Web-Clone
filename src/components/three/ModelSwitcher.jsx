@@ -8,6 +8,8 @@ import {useGSAP} from '@gsap/react';
 
 const ANIMATION_DURATION = 1;
 const OFFSET_DISTANCE = 5;
+const SCALE_LARGE_DESKTOP = 0.08;
+const SCALE_SMALL_DESKTOP = 0.05;
 
 const fadeMeshes = (group, opacity) => {
     if(!group) return ;
@@ -26,11 +28,9 @@ const moveGroup = (group,x) => {
     gsap.to(group.position, {x, duration:ANIMATION_DURATION});
 }
 
+
 const ModelSwitcher = ({scale, isMobile}) => {
 
-    const SCALE_LARGE_DESKTOP = 0.08;
-    const SCALE_SMALL_DESKTOP = 0.05;
-    
 
     const smallMacbookRef = React.useRef();
     const largeMacbookRef = React.useRef();
