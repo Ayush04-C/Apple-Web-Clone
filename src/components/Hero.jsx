@@ -3,7 +3,7 @@ const Hero = () => {
     const videoRef = React.useRef();
 
     useEffect(() => {
-        if (videoRef.current) videoRef.current.playbackRate = 2;
+        if (videoRef.current) videoRef.current.playbackRate = 1;
     },[])
 
    return (
