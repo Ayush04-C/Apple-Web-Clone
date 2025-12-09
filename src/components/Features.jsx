@@ -53,7 +53,7 @@ const ModelScroll =() => {
       })
 
       if(groupRef.current) {
-         modelTimeline.to(groupRef.current.rotation, { y: Math.PI*2, ease:'powe1.inOut'})
+         modelTimeline.to(groupRef.current.rotation, { y: Math.PI*2, ease:'power1.inOut'})
       }
 
       timeline
