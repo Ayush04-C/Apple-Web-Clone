@@ -1,7 +1,7 @@
 import { Canvas } from '@react-three/fiber';
 import  StudioLights from './three/StudioLights.jsx';
 import { features, featureSequence } from '../constants';
-import cslx from 'clsx';
+import clsx from 'clsx';
 import { useRef, Suspense, useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { Html } from '@react-three/drei';
